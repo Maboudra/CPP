@@ -1,5 +1,5 @@
-SRC = Zombie.cpp main.cpp
-NAME = Zombie
+SRC = main.cpp
+NAME = replace
 CC = c++ -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
@@ -13,5 +13,3 @@ clean:
 fclean: clean
 
 re: fclean all
-
-.PHONY: all clean fclean re

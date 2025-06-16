@@ -1,27 +1,16 @@
-# Nom de l'exécutable
-NAME = phonebook
+SRC = Zombie.cpp main.cpp zombieHorde.cpp
+NAME = Zombie
+CC = c++ -Wall -Wextra -Werror -std=c++98
 
-# Fichiers source
-SRC = main.cpp Contact.cpp PhoneBook.cpp
-
-# Objets compilés
-OBJ = $(SRC:.cpp=.o)
-
-# Compilateur et flags
-CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-
-# Règles
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+$(NAME): $(SRC)
+	$(CC) $(SRC) -o $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	rm -rf $(NAME)
 
 fclean: clean
-	rm -f $(NAME)
 
 re: fclean all
 

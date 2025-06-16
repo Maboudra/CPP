@@ -1,5 +1,5 @@
-SRC = Zombie.cpp main.cpp
-NAME = Zombie
+SRC = main.cpp
+NAME = brain
 CC = c++ -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
