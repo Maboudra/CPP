@@ -5,6 +5,15 @@ WrongCat::WrongCat() {
     type = "WrongCat";
     std::cout << "[WrongCat] Constructor" << std::endl;
 }
+WrongCat::WrongCat(const WrongCat& other) : WrongAnimal(other) {
+    std::cout << "[WrongCat] Copy constructor" << std::endl;
+}
+WrongCat& WrongCat::operator=(const WrongCat& rhs) {
+    WrongAnimal::operator=(rhs);
+    std::cout << "[WrongCat] Copy assignment" << std::endl;
+    return *this;
+}
+
 WrongCat::~WrongCat() {
     std::cout << "[WrongCat] Destructor" << std::endl;
 }

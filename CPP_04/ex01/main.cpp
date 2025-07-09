@@ -59,8 +59,7 @@ int main()
     basicDog.setIdea(0, "Manger");
     basicDog.setIdea(1, "Dormir");
 
-    Dog copiedDog = basicDog; // Constructeur de copie
-
+    Dog copiedDog = basicDog;
     std::cout << "Copie - Idée 0 : " << copiedDog.getIdea(0) << std::endl;
     std::cout << "Copie - Idée 1 : " << copiedDog.getIdea(1) << std::endl;
 

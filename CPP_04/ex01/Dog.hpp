@@ -17,7 +17,6 @@ public:
 
     virtual void makeSound() const;
 
-    // Accès au cerveau
     void setIdea(int index, const std::string& idea);
     std::string getIdea(int index) const;
 };
